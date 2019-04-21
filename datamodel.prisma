@@ -1,0 +1,10 @@
+type User {
+  id: ID! @id
+  name: String!
+  relation: Relation @relation(link: INLINE)
+}
+
+type Relation {
+  id: ID! @id
+  field: String!
+}
